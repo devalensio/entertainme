@@ -1,0 +1,26 @@
+type Movies {
+  title: String
+  overview: String
+  poster_path: String
+  popularity: String
+  tag: String
+  status: String
+}
+
+type Series {
+  title: String
+  overview: String
+  poster_path: String
+  popularity: String
+  tag: String
+  status: String
+}
+
+type Orches {
+  Movies: [Movies]
+  Series: [Series]
+}
+
+type Query {
+  fetchData: Orches
+}
